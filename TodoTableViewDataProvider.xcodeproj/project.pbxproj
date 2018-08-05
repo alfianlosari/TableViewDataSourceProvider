@@ -12,6 +12,10 @@
 		8B02E10E2117182600F10DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B02E10C2117182600F10DCE /* Main.storyboard */; };
 		8B02E1102117182700F10DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B02E10F2117182700F10DCE /* Assets.xcassets */; };
 		8B02E1132117182700F10DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B02E1112117182700F10DCE /* LaunchScreen.storyboard */; };
+		8B02E11F21173FF600F10DCE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02E11E21173FF600F10DCE /* Item.swift */; };
+		8B02E1232117408400F10DCE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02E1222117408400F10DCE /* DataManager.swift */; };
+		8B02E1262117429900F10DCE /* DataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02E1252117429900F10DCE /* DataSourceProvider.swift */; };
+		8B02E1282117430A00F10DCE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02E1272117430A00F10DCE /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		8B02E10F2117182700F10DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B02E1122117182700F10DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B02E1142117182700F10DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B02E11E21173FF600F10DCE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8B02E1222117408400F10DCE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8B02E1252117429900F10DCE /* DataSourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceProvider.swift; sourceTree = "<group>"; };
+		8B02E1272117430A00F10DCE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		8B02E1072117182600F10DCE /* TodoTableViewDataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				8B02E1242117427000F10DCE /* DataProvider */,
+				8B02E11D2117384700F10DCE /* View */,
+				8B02E11C2117384200F10DCE /* Model */,
+				8B02E11B2117383700F10DCE /* ViewController */,
+				8B02E11A2117382600F10DCE /* Resources */,
+			);
+			path = TodoTableViewDataProvider;
+			sourceTree = "<group>";
+		};
+		8B02E11A2117382600F10DCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8B02E1082117182600F10DCE /* AppDelegate.swift */,
-				8B02E10A2117182600F10DCE /* ViewController.swift */,
 				8B02E10C2117182600F10DCE /* Main.storyboard */,
 				8B02E10F2117182700F10DCE /* Assets.xcassets */,
 				8B02E1112117182700F10DCE /* LaunchScreen.storyboard */,
 				8B02E1142117182700F10DCE /* Info.plist */,
 			);
-			path = TodoTableViewDataProvider;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B02E11B2117383700F10DCE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B02E10A2117182600F10DCE /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8B02E11C2117384200F10DCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B02E11E21173FF600F10DCE /* Item.swift */,
+				8B02E1222117408400F10DCE /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B02E11D2117384700F10DCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B02E1272117430A00F10DCE /* ItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B02E1242117427000F10DCE /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				8B02E1252117429900F10DCE /* DataSourceProvider.swift */,
+			);
+			path = DataProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B02E10B2117182600F10DCE /* ViewController.swift in Sources */,
+				8B02E1232117408400F10DCE /* DataManager.swift in Sources */,
+				8B02E1282117430A00F10DCE /* ItemCell.swift in Sources */,
+				8B02E11F21173FF600F10DCE /* Item.swift in Sources */,
+				8B02E1262117429900F10DCE /* DataSourceProvider.swift in Sources */,
 				8B02E1092117182600F10DCE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
-				INFOPLIST_FILE = TodoTableViewDataProvider/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TodoTableViewDataProvider/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
-				INFOPLIST_FILE = TodoTableViewDataProvider/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TodoTableViewDataProvider/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
